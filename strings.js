@@ -28,9 +28,9 @@ console.log(lowerCaseStr1)
 let lowerCaseStr2 = "UndERneath".toLowerCase();
 console.log(lowerCaseStr2); 
 // TitleCase
-let message = 'A wonderful world'
-         message1 = message.toLowerCase();
-          console.log(message);
-          message2 = message1.toTitleCase();
-          console.log(message2);
+let titleCaseWord = "A wonderful world"
+    .split(" ")
+    .map(word => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase())
+    .join(" ");
+console.log(titleCaseWord); 
 
